@@ -1,11 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "Gemini Water Tracker",
-  "version": "1.0",
-  "description": "Live Olympic pool water consumption tracker for Gemini.",
+  "name": "Omni AI Water Tracker",
+  "version": "2.0",
+  "description": "Live Olympic pool water consumption tracker for Gemini, ChatGPT, Claude, and Copilot.",
   "content_scripts": [
     {
-      "matches": ["*://gemini.google.com/*"],
+      "matches": [
+        "*://gemini.google.com/*",
+        "*://chatgpt.com/*",
+        "*://chat.openai.com/*",
+        "*://claude.ai/*",
+        "*://copilot.microsoft.com/*"
+      ],
       "js": ["content.js"],
       "css": ["styles.css"]
     }

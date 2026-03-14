@@ -1,9 +1,9 @@
 const widget = document.createElement('div');
-widget.id = 'gemini-water-widget';
-widget.innerHTML = '<span>🏊</span><span id="gemini-water-count">0.0000000000</span>';
+widget.id = 'ai-water-widget';
+widget.innerHTML = '<span>🏊</span><span id="ai-water-count">0.0000000000</span>';
 document.body.appendChild(widget);
 
-const countSpan = document.getElementById('gemini-water-count');
+const countSpan = document.getElementById('ai-water-count');
 let maxSessionWords = 0;
 const POOL_MULTIPLIER = 0.0000000018927065;
 
