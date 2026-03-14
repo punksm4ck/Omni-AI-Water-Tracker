@@ -1,0 +1,20 @@
+#gemini-water-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #00FFFF;
+  font-family: Consolas, monospace;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 12px;
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: none;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}

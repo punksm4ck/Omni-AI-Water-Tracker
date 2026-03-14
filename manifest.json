@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Water Tracker",
+  "version": "1.0",
+  "description": "Live Olympic pool water consumption tracker for Gemini.",
+  "content_scripts": [
+    {
+      "matches": ["*://gemini.google.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
