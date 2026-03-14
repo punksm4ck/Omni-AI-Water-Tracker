@@ -1,19 +1,9 @@
 const widget = document.createElement('div');
 widget.id = 'ai-water-widget';
-widget.innerHTML = 
-  <div class="metric-row metric-main">
-    <span>🏊</span><span id="ai-pool-count">0.0000000000</span>
-  </div>
-  <div class="metric-row metric-sub">
-    <span>💧</span><span id="ai-oz-count" class="value">0.00</span><span> oz</span>
-  </div>
-  <div class="metric-row metric-sub">
-    <span>🌿</span><span id="ai-co2-count" class="value">0.00</span><span> g CO2</span>
-  </div>
-  <div class="metric-row metric-sub">
-    <span>📝</span><span id="ai-word-count" class="value">0</span><span> words</span>
-  </div>
-;
+widget.innerHTML = '<div class="metric-row metric-main"><span>🏊</span><span id="ai-pool-count">0.0000000000</span></div>' +
+                   '<div class="metric-row metric-sub"><span>💧</span><span id="ai-oz-count" class="value">0.00</span><span> oz</span></div>' +
+                   '<div class="metric-row metric-sub"><span>🌿</span><span id="ai-co2-count" class="value">0.00</span><span> g CO2</span></div>' +
+                   '<div class="metric-row metric-sub"><span>📝</span><span id="ai-word-count" class="value">0</span><span> words</span></div>';
 document.body.appendChild(widget);
 
 const poolSpan = document.getElementById('ai-pool-count');
@@ -43,7 +33,6 @@ function updateMetrics() {
 
         if (currentTotalWords > maxSessionWords) {
             maxSessionWords = currentTotalWords;
-            
             poolSpan.innerText = (maxSessionWords * POOL_MULTIPLIER).toFixed(10);
             ozSpan.innerText = (maxSessionWords * OZ_MULTIPLIER).toFixed(2);
             co2Span.innerText = (maxSessionWords * CO2_MULTIPLIER).toFixed(2);
