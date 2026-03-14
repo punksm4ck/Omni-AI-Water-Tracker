@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Omni AI Water Tracker",
+  "name": "Omni-AI Water Tracker",
   "version": "2.0",
   "description": "Live Olympic pool water consumption tracker for Gemini, ChatGPT, Claude, and Copilot.",
   "content_scripts": [
@@ -17,3 +17,4 @@
     }
   ]
 }
+

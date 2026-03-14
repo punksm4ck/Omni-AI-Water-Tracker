@@ -1,4 +1,4 @@
-# Gemini Water Tracker 🏊💧
+# Omni-AI Water Tracker 🏊💧
 
 A lightweight, precision Chrome extension that calculates and visualizes the estimated water consumption of your Google Gemini AI sessions in real-time. 
 
@@ -21,3 +21,4 @@ The widget dynamically converts your session's total word count into the fractio
 
 ## License
 This project is licensed under the MIT License.
+
